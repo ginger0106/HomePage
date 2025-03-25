@@ -117,9 +117,9 @@
 <!-- The News Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="news">
    <h2>News</h2>
-      <p><li> 03/2025, One paper has been accepted by ICME 2025 (CCB-B)！
-      <p><li> 03/2025, One paper has been accepted by NOSSDAV 2025 (CCB-B)！
-      <p><li> 02/2025, Two paper have been accepted by CVPR 2025(CCB-A)！
+      <p><li> <span style="color:red">03/2025, One paper has been accepted by ICME 2025 (CCB-B)！</span> 
+      <p><li> <span style="color:red">03/2025, One paper has been accepted by NOSSDAV 2025 (CCB-B)！</span> 
+      <p><li> <span style="color:red">02/2025, Two paper have been accepted by CVPR 2025(CCB-A)！</span> 
       <p><li> 01/2025, I will serve as a Program Committee member for IJCNN.
       <p><li> 01/2025, I will serve as a Program Committee member for ICME.
       <p><li> 09/2024, I will serve as a Program Committee member for AAAI.
@@ -160,8 +160,39 @@ img {
 </head>
     <h2>Recent Projects</h2>
     <p class="w3-justify">
-        My current research aims at <strong>Edge intelligence</strong>, focusing on deep model training and inference on edge, or using machine learning techniques to optimize edge computing.
-    </p>
+       <h2>研究方向概览</h2>
+        <p>本小组的具体研究方向分为两个部分：</p>
+        <ul>
+            <li><strong>模型泛化与持续学习</strong>
+                <ul>
+                    <li><strong>测试时模型自适应推理（Test-time Adaptation）</strong>：测试时间使用无监督的方式对模型进行在线更新，提升模型泛化性能，涉及小模型、大模型、多模态、具身智能场景…</li>
+                    <li><strong>LLM泛化与微调</strong>：解决 LLM 中的数据漂移和幻觉问题</li>
+                </ul>
+            </li>
+            <li><strong>模型高效部署与推理优化</strong>
+                <ul>
+                    <li><strong>模型部署与资源调度</strong>：根据模型性能和资源消耗设计模型部署策略，在资源消耗和性能中实现平衡。</li>
+                    <li><strong>大小模型联合推理</strong>：联合大模型与小模型共同实现推理任务，在资源消耗和性能中实现平衡。</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Research Direction Overview</h2>
+        <p>Our group's specific research directions are divided into two parts:</p>
+        <ul>
+            <li><strong>Model Generalization and Continuous Learning</strong>
+                <ul>
+                    <li><strong>Test-time Adaptation</strong>: Using unsupervised methods to update models online during testing to improve model generalization performance, involving small models, large models, multimodal, and embodied AI scenarios...</li>
+                    <li><strong>Federated Fine-tuning (Fed-TTA)</strong>: Leveraging knowledge from multiple models to enhance large model generalization performance during testing.</li>
+                </ul>
+            </li>
+            <li><strong>Efficient Model Deployment and Inference Optimization</strong>
+                <ul>
+                    <li><strong>Model Deployment and Resource Scheduling</strong>: Designing model deployment strategies based on model performance and resource consumption to achieve balance between resource usage and performance.</li>
+                    <li><strong>Joint Large and Small Model Inference</strong>: Combining large and small models to accomplish inference tasks while balancing resource consumption and performance.</li>
+                </ul>
+            </li>
+        </ul>
 
         <h4><li>Joint Model and Data Adaptation for Cloud Inference Serving</li></h4>
         <div id ="center">  
