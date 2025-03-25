@@ -161,6 +161,13 @@ img {
     <h2>Recent Projects</h2>
     <p class="w3-justify">
        <h2>研究方向概览</h2>
+              <p>
+            课题介绍可以具体参考这个链接： 
+            <a href="https://www.notion.so/Model-Fine-tuning-and-Inference-Group-0222eea04597466e92825dc7f8e02b87" target="_blank">
+                模型微调和推理小组 | Notion
+            </a>
+        </p>
+
         <p>本小组的具体研究方向分为两个部分：</p>
         <ul>
             <li><strong>模型泛化与持续学习</strong>
@@ -194,53 +201,80 @@ img {
             </li>
         </ul>
 
-        <h4><li>Joint Model and Data Adaptation for Cloud Inference Serving</li></h4>
-        <div id ="center">  
-        <img style="width:90%;" src="images/A2_arch.png"> 
-        <p class="w3-justify">
-        <!-- <a style="color: #447ec9" href="https://github.com/huawei-noah/AdderNet">Project Page</a> | <a style="color: #447ec9" href="https://arxiv.org/pdf/2101.10015.pdf">Hardware Implementation</a>
-        </p> -->
-        <p class="w3-justify">
-        we tackle the dual challenge of computation bandwidth trade-off and cost-effectiveness by proposing A2,
-        an efficient joint Adaptive model, and Adaptive data deep
-        learning serving solutions across the geo-datacenters. Inspired
-        by the insight that a trade-off between computational cost and
-        bandwidth cost in achieving the same accuracy, we design a
-        real-time inference serving framework, which <strong>selectively places
-        different “versions” of the deep learning models at different geolocations, and schedules different data sample versions to be sent
-        to those model versions for inference. </strong>
-        We deploy A2 on Amazon EC2 for experiments, which shows that A2 achieves
-        <span style="color:red">30%-50%</span> serving cost reduction under the same required latency
-        and accuracy as compared to baselines
-        </p> 
 
-        <h4><li>Fast-DRD: Fast decentralized reinforcement distillation for deadline-aware edge computing</li></h4>
-        <img style="width:70%;"class="center", src="images/fast_drd.jpg"> 
-        <p class="w3-justify">
-        <strong>We everages DRL with a distillation module to drive learning efficiency for edge computing with partial observation</strong>. We formulate the deadline-aware offloading problem 
-        as a decentralized partially observable Markov decision process (Dec-POMDP) with distillation, called fast decentralized reinforcement distillation(Fast-DRD). 
-        compared with naive Policy Distillation, Fast-DRD’s two-stage distillation dramatically reduces the amount of exchanging data, and the learning time and data interaction 
-        cost decrease nearly <span style="color:red">90%</span>. In a complex environment of heterogeneous users with partial observation, offloading models learned by decentralized learning in Fast-DRD still maintain offloading efficiency.
-        </p> 
+            <div class="project">
+            <img src="images/datta.jpg" alt="DATTA Framework">
+            <div class="project-content">
+                <h4>DATTA: Domain Diversity Adaptive Test-Time Adaptation</h4>
+                <p><strong>Conference: ICME’25 (CCF B) - Accepted</strong></p>
+                <p>
+                    本研究提出 DATTA，这是首个能够处理动态领域偏移流的测试时自适应方法，实验结果表明其性能提升幅度高达 <span class="highlight">13%</span>。
+                </p>
+                <p>
+                    This research introduces DATTA, the first test-time adaptation method for handling dynamic domain shift streams. Experimental results show a performance improvement of up to <span class="highlight">13%</span>.
+                </p>
+            </div>
+        </div>
 
-        <h4><li>BACombo—Bandwidth-aware decentralized federated learning</li></h4>
-        <img style="width:75%;" src="images/bacombo.jpg"> 
-        <!-- &nbsp&nbsp <img style="width:60%;" src="images/video.gif"> -->
-        <p class="w3-justify">
-        <!-- <a style="color: #447ec9" href="https://www.huaweicloud.com/intl/en-us/HDC.Cloud.html">Huawei Developer Conference (HDC) 2020</a> | <a style="color: #447ec9" href="https://developer.huaweicloud.com/exhibition/Atlas_neural_style.html">Online Demo</a> -->
-        </p>
-        <p class="w3-justify">
-        The initial version of BACombo was accepted by the IJCAI 19' FL workshop, which is <strong> the first try of segmented aggregation for FL </strong>. 
-        In the current version, we extend the worker selection scheme.
-        </p> 
-        <p class="w3-justify">        
-          To avoid the drawback of network congestion in centralized parameter servers architecture, which is adopted in today’s FL systems, 
-          we explore the possibility of a decentralized FL solution, called BACombo. Taking the insight that the peer-to-peer bandwidth is much smaller than the 
-          worker’s maximum network capacity, BACombo could fully utilize the bandwidth by saturating the network with segmented gossip aggregation. 
-          The experiments show that BACombo significantly reduces <span style="color:red">(up to 18×)</span>.  the training time and maintains a good 
-          convergence performance.       
-        </p>  
+        <div class="project">
+            <img src="images/cosmic.jpg" alt="COSMIC Framework">
+            <div class="project-content">
+                <h4>COSMIC: Clique-Oriented Semantic Multi-space Integration</h4>
+                <p><strong>Conference: CVPR’25 (CCF A) - Accepted</strong></p>
+                <p>
+                    本研究提出创新的 COSMIC 框架，显著提升视觉语言模型在跨域测试任务中的性能（提升 <span class="highlight">15.81%</span>）。
+                </p>
+                <p>
+                    This research proposes the innovative COSMIC framework, significantly improving visual language model performance in cross-domain test tasks (improvement of <span class="highlight">15.81%</span>).
+                </p>
+            </div>
+        </div>
+    </div>
+  
+      <div class="project">
+            <img src="images/A2_arch.png" alt="A2 Architecture">
+            <div class="project-content">
+                <h4>Joint Model and Data Adaptation for Cloud Inference Serving</h4>
+                <p>
+                    本项目提出了高效的联合自适应模型和自适应数据深度学习服务解决方案（A2），
+                    通过选择性地将不同“版本”的深度学习模型放置在不同地理位置，并调度不同版本的数据样本进行推理，显著减少服务成本。
+                </p>
+                <p>
+                    This project proposes an efficient joint adaptive model and adaptive data deep learning serving solution (A2), 
+                    selectively placing different “versions” of deep learning models at different geographic locations and scheduling data sample versions for inference. 
+                    A2 reduces <span class="highlight">30%-50%</span> serving costs under the same latency and accuracy requirements.
+                </p>
+            </div>
+        </div>
 
+        <div class="project">
+            <img src="images/fast_drd.jpg" alt="Fast-DRD">
+            <div class="project-content">
+                <h4>Fast-DRD: Fast Decentralized Reinforcement Distillation for Deadline-aware Edge Computing</h4>
+                <p>
+                    本项目通过结合强化学习（DRL）和蒸馏模块，提升了边缘计算中部分观测场景的学习效率。
+                    Fast-DRD 显著减少了数据交换量，学习时间和交互成本降低近 <span class="highlight">90%</span>。
+                </p>
+                <p>
+                    By combining deep reinforcement learning (DRL) with a distillation module, this project improves learning efficiency for partially observable edge computing scenarios. 
+                    Fast-DRD reduces data exchange, learning time, and interaction costs by nearly <span class="highlight">90%</span>.
+                </p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="images/bacombo.jpg" alt="BACombo">
+            <div class="project-content">
+                <h4>BACombo: Bandwidth-aware Decentralized Federated Learning</h4>
+                <p>
+                    本项目提出了分布式联邦学习解决方案 BACombo，避免集中式参数服务器架构导致的网络拥塞，并通过分段式 Gossip 聚合显著减少训练时间（最多 <span class="highlight">18×</span>）。
+                </p>
+                <p>
+                    This project proposes a decentralized federated learning solution, BACombo, which avoids network congestion caused by centralized parameter server architectures. 
+                    With segmented gossip aggregation, BACombo significantly reduces training time (up to <span class="highlight">18×</span>).
+                </p>
+            </div>
+        </div>
   </div>
   
   <!-- The Talks Section -->
